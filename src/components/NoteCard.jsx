@@ -27,7 +27,7 @@ const NoteCard = ({ note }) => {
      document.addEventListener("mousemove", mouseMove);
      document.addEventListener("mouseup", mouseUp);
 
-    } 
+    }   
 
    const mouseMove = (e) => {
       
@@ -39,8 +39,6 @@ const NoteCard = ({ note }) => {
      mouseStartPos.x = e.clientX;
      mouseStartPos.y = e.clientY;
 
-     const newPosition = setNewOffset(cardRef.current, mouseMoveDir); 
-     
      setPosition(newPosition);
    };
 
